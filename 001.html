@@ -25,9 +25,17 @@
 	
 	<script>
      document.addEventListener("click", function() {
+      playAudio();
+     });
+	 
+	 document.addEventListener("touchstart", function() {
+      playAudio();
+    });
+	
+	function playAudio() {
       var audio = document.getElementById("my-audio");
       audio.play();
-     });
+    }
     </script>
   </body>
 </html>
